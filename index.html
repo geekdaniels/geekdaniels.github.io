@@ -124,16 +124,7 @@
         ul a {
 /*            color: #f75b49 ;*/
         }
-        @media (max-width: 33em) {
-            .navi {
-                width: auto;
-                text-align: justify;
-            }
-            .navi > li {
-                float: none;
-                display: block;
-            }
-        }
+   
         /* slider */
         a {
             color: #b1764c;
@@ -221,6 +212,23 @@
         #back{
             z-index: 100000000000;
         }
+             @media (max-width: 33em) {
+            .navi {
+                width: auto;
+                text-align: justify;
+            }
+            .navi > li {
+                float: none;
+                display: block;
+            }
+                     #headimg{
+                position: relative;
+                z-index: 1000;
+            }
+            .static {
+	        top: 0px;
+}
+        }
     </style>
 
     <!--///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -253,7 +261,7 @@
 </head>
 
 <body><div id="back">
-    <div style="background-color:#f5f5f7;" class="container-fluid">
+    <div id="headimg" style="background-color:#f5f5f7;" class="container-fluid">
         <div style="text-align:center;" class="col-md-offset-5 col-md-2">
             <img class="img-responsive" src="img/jeffsons%20foundation.jpg">
             <p id="headp">JEFFSON'S FOUNDATION</p>
